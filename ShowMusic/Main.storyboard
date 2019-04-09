@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mxn-ak-LuV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="K1D-Bq-wBZ">
+            <objects>
+                <tableViewController id="mxn-ak-LuV" customClass="HomeViewController" customModule="ShowMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mza-ss-v2A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlaylistCell" rowHeight="270" id="3mq-Qs-n0d" customClass="PlaylistCell" customModule="ShowMusic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3mq-Qs-n0d" id="JaW-4Y-REN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYt-qG-lSC">
+                                            <rect key="frame" x="16" y="12" width="63.5" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j1A-IP-45u">
+                                            <rect key="frame" x="0.0" y="45" width="375" height="220"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="220" id="yJu-Aj-Uip"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1Q5-VU-zMd">
+                                                <size key="itemSize" width="170" height="212"/>
+                                                <size key="headerReferenceSize" width="10" height="0.0"/>
+                                                <size key="footerReferenceSize" width="10" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumCell" id="nFj-n7-zGr" customClass="AlbumCell" customModule="ShowMusic" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="5" width="170" height="210"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="07U-jh-rfb">
+                                                                <rect key="frame" x="10" y="10" width="150" height="150"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="150" id="ffB-NS-yNh"/>
+                                                                    <constraint firstAttribute="height" constant="150" id="j7A-j5-Pzz"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Albumtitle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJU-OO-cQY">
+                                                                <rect key="frame" x="8" y="165" width="154" height="46"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="UJU-OO-cQY" secondAttribute="bottom" id="44y-rY-bFb"/>
+                                                        <constraint firstItem="UJU-OO-cQY" firstAttribute="leading" secondItem="nFj-n7-zGr" secondAttribute="leading" constant="8" id="TJW-qx-d5d"/>
+                                                        <constraint firstItem="UJU-OO-cQY" firstAttribute="top" secondItem="07U-jh-rfb" secondAttribute="bottom" constant="5" id="ZAQ-bX-CTb"/>
+                                                        <constraint firstItem="07U-jh-rfb" firstAttribute="centerX" secondItem="nFj-n7-zGr" secondAttribute="centerX" id="cnT-OQ-xCd"/>
+                                                        <constraint firstItem="07U-jh-rfb" firstAttribute="top" secondItem="nFj-n7-zGr" secondAttribute="top" constant="10" id="vbQ-Hd-XOv"/>
+                                                        <constraint firstAttribute="trailing" secondItem="UJU-OO-cQY" secondAttribute="trailing" constant="8" id="wSA-3w-RBK"/>
+                                                    </constraints>
+                                                    <size key="customSize" width="170" height="210"/>
+                                                    <connections>
+                                                        <outlet property="thumbnail" destination="07U-jh-rfb" id="5dI-ta-70L"/>
+                                                        <outlet property="title" destination="UJU-OO-cQY" id="AuR-6c-dWm"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                            <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CollectionHeader" id="fwT-pG-mmX">
+                                                <rect key="frame" x="0.0" y="0.0" width="10" height="220"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </collectionReusableView>
+                                            <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CollectionFooter" id="7PD-oz-glm">
+                                                <rect key="frame" x="180" y="0.0" width="10" height="220"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </collectionReusableView>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="gYt-qG-lSC" firstAttribute="leading" secondItem="JaW-4Y-REN" secondAttribute="leading" constant="16" id="9a9-yW-2PL"/>
+                                        <constraint firstAttribute="trailing" secondItem="j1A-IP-45u" secondAttribute="trailing" id="DtQ-6Q-NMo"/>
+                                        <constraint firstItem="j1A-IP-45u" firstAttribute="leading" secondItem="JaW-4Y-REN" secondAttribute="leading" id="LKv-BM-kXk"/>
+                                        <constraint firstItem="gYt-qG-lSC" firstAttribute="top" secondItem="JaW-4Y-REN" secondAttribute="top" constant="12" id="a57-fw-nBX"/>
+                                        <constraint firstAttribute="bottom" secondItem="j1A-IP-45u" secondAttribute="bottom" constant="5" id="giy-Qh-sSr"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <connections>
+                                    <outlet property="albums" destination="j1A-IP-45u" id="bOw-1W-Ml6"/>
+                                    <outlet property="title" destination="gYt-qG-lSC" id="pjZ-Ba-rlZ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="mxn-ak-LuV" id="JQh-Bx-hPn"/>
+                            <outlet property="delegate" destination="mxn-ak-LuV" id="Xxb-4u-S7B"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="8xM-bI-57E" id="OAX-ar-1ht"/>
+                        <outlet property="errorMessage" destination="9pv-UU-cOt" id="TsQ-Ef-iZY"/>
+                        <outlet property="errorView" destination="geZ-OL-5wZ" id="sv4-fi-pOy"/>
+                        <outlet property="loadingView" destination="9Ky-wC-gzp" id="eYM-4y-h3T"/>
+                        <outlet property="loadingViewText" destination="EHY-SH-zGi" id="0vb-kh-QbC"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gdf-5G-13Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="9Ky-wC-gzp">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8xM-bI-57E">
+                            <rect key="frame" x="101.5" y="45.5" width="37" height="37"/>
+                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retrieving your data!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHY-SH-zGi">
+                            <rect key="frame" x="41" y="94.5" width="158.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="EHY-SH-zGi" firstAttribute="centerX" secondItem="9Ky-wC-gzp" secondAttribute="centerX" id="06J-yY-BJb"/>
+                        <constraint firstItem="8xM-bI-57E" firstAttribute="centerY" secondItem="9Ky-wC-gzp" secondAttribute="centerY" id="1Xd-0A-Iu3"/>
+                        <constraint firstItem="EHY-SH-zGi" firstAttribute="top" secondItem="8xM-bI-57E" secondAttribute="bottom" constant="12" id="K8f-wn-w5N"/>
+                        <constraint firstItem="8xM-bI-57E" firstAttribute="centerX" secondItem="9Ky-wC-gzp" secondAttribute="centerX" id="jNS-mx-Zcw"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="YkK-nb-CsO"/>
+                </view>
+                <view contentMode="scaleToFill" id="geZ-OL-5wZ">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😞" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZJ-Ks-ZhX">
+                            <rect key="frame" x="108.5" y="53.5" width="23" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong while getting your data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pv-UU-cOt">
+                            <rect key="frame" x="8" y="86.5" width="224" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="EZJ-Ks-ZhX" firstAttribute="centerY" secondItem="geZ-OL-5wZ" secondAttribute="centerY" id="3Q3-Ia-HhX"/>
+                        <constraint firstItem="9pv-UU-cOt" firstAttribute="top" secondItem="EZJ-Ks-ZhX" secondAttribute="bottom" constant="12" id="JNZ-OR-jEa"/>
+                        <constraint firstItem="9pv-UU-cOt" firstAttribute="leading" secondItem="geZ-OL-5wZ" secondAttribute="leading" constant="8" id="Vtz-f1-a8z"/>
+                        <constraint firstItem="9pv-UU-cOt" firstAttribute="centerX" secondItem="geZ-OL-5wZ" secondAttribute="centerX" id="cs1-Bt-JDs"/>
+                        <constraint firstAttribute="trailing" secondItem="9pv-UU-cOt" secondAttribute="trailing" constant="8" id="gIC-TG-exS"/>
+                        <constraint firstItem="EZJ-Ks-ZhX" firstAttribute="centerX" secondItem="geZ-OL-5wZ" secondAttribute="centerX" id="jgY-ht-Wo3"/>
+                        <constraint firstItem="Atc-b0-ANh" firstAttribute="bottom" secondItem="9pv-UU-cOt" secondAttribute="bottom" constant="8" id="lyY-37-gO8"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Atc-b0-ANh"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="124" y="-186.65667166416793"/>
+        </scene>
+    </scenes>
+</document>

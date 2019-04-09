@@ -1,0 +1,166 @@
+{
+  "playlists": [{
+      "title": "Favorites",
+      "albums": [
+        1, 8, 10, 12, 2
+      ]
+    },
+    {
+      "title": "To Check Out",
+      "albums": [
+        3, 14, 18, 0, 29
+      ]
+    },
+    {
+      "title": "Friday's Jams",
+      "albums": [
+        17, 16, 15, 6, 4, 31
+      ]
+    },
+    {
+      "title": "Editor's Picks",
+      "albums": [
+        5, 13, 7, 9, 11
+      ]
+    },
+    {
+      "title": "This Year's Best",
+      "albums": [
+        27, 19, 20, 23, 28
+      ]
+    },
+    {
+      "title": "Workout Mix",
+      "albums": [
+        21, 22, 24, 25, 26
+      ]
+    },
+    {
+      "title" : "The Dead Zone",
+      "albums" : [
+        41, 42, 43
+      ]
+    }
+  ],
+  "albums": [{
+      "id": 0,
+      "title": "The Impossible Kid"
+    },
+    {
+      "id": 1,
+      "title": "Funeral"
+    },
+    {
+      "id": 2,
+      "title": "Seven"
+    },
+    {
+      "id": 3,
+      "title": "Revolver"
+    },
+    {
+      "id": 4,
+      "title": "Post"
+    },
+    {
+      "id": 5,
+      "title": "Awaken My Love"
+    },
+    {
+      "id": 6,
+      "title": "The Bones of What You Believe"
+    },
+    {
+      "id": 7,
+      "title": "A Color Map of the Sun"
+    },
+    {
+      "id": 8,
+      "title": "For Lack of a Better Name"
+    },
+    {
+      "id": 9,
+      "title": "White Pony"
+    },
+    {
+      "id": 10,
+      "title": "Some Great Reward"
+    },
+    {
+      "id": 11,
+      "title": "Cancer 4 Cure"
+    },
+    {
+      "id": 12,
+      "title": "ZABA"
+    },
+    {
+      "id": 13,
+      "title": "Re-coil"
+    },
+    {
+      "id": 14,
+      "title": "Unknown Pleasures"
+    },
+    {
+      "id": 15,
+      "title": "KIDS SEE GHOSTS"
+    },
+    {
+      "id": 16,
+      "title": "This is Happening"
+    },
+    {
+      "id": 17,
+      "title": "Hurry Up, We're Dreaming"
+    },
+    {
+      "id": 18,
+      "title": "Mezzanine"
+    },
+    {
+      "id": 19,
+      "title": "Mr. Beast"
+    },
+    {
+      "id": 20,
+      "title": "The Downward Spiral"
+    },
+    {
+      "id": 21,
+      "title": "Noise vs. Beauty"
+    },
+    {
+      "id": 22,
+      "title": "Give You the Ghost"
+    },
+    {
+      "id": 23,
+      "title": "Run the Jewels 2"
+    },
+    {
+      "id": 24,
+      "title": "Wonder Where We Land"
+    },
+    {
+      "id": 25,
+      "title": "Singularity"
+    },
+    {
+      "id": 26,
+      "title": "When the Dust Settles"
+    },
+    {
+      "id": 27,
+      "title": "Syro"
+    },
+    {
+      "id": 28,
+      "title": "Remain in Light"
+    },
+    {
+      "id": 29,
+      "title": "Lateralus"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+*.DS_Store
+xcuserdata
+*.xcuserdata
+*.xcuserstate
+*.xcbkptlist
+*.xcscmblueprint
+test_output
+.idea
+/fastlane/report.xml
+/Gemfile.lock
+fastlane/.env.default
